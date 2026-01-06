@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+        #  = id
+        .  = class
+        :  = pseudo-class
+        :: = pseudo-elementos
+        >  = filho childrem
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /*Primeiro estilo generico*/
+        a {
+           color: rgba(21, 255, 0, 0.904);
+           text-decoration: none;
+           font-weight: bold;
+        }
+        /*Segundo estilo site visitado*/
+        a:visited {
+           color: rgb(201, 1, 1);
+        }
+        /*Terceiro estilo animação quando passa o mouse em cima*/
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        /*Quarto estilo animação quando clica*/
+        a:active {
+            color: aqua;
+        }
+        .especial {
+            background-color: rgba(231, 103, 103, 0.877);
+        }
+        .especial::before {
+            content: '->';
+        }
+        .especial::after {
+            content: '<-';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/guileummi" target="_blank" rel="external">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/channel/UCdioP-40ldefKExAf4KA7cg" target="_blank" rel="external class="especial">Canal do YT</a></li>
+    </ul>
+</body>
+</html>
