@@ -11,6 +11,8 @@
 
         table {
             width: 500px;
+            border-collapse: collapse;
+            position: relative;
         }
 
         caption {
@@ -20,9 +22,20 @@
             background-color: lightgray ; 
         }
 
+        tbody > tr:nth-child(2n) {
+            /*
+                2n, odd, 
+            */
+            background-color: lightgray;
+        }
+
         td, th {
             border: 1px solid black;
             padding: 10px;
+        }
+
+        td.numero {
+            text-align: right;
         }
 
         thead, tfoot {
@@ -30,8 +43,15 @@
             color: white;
         }
 
-        td.numero {
-            text-align: right;
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
         }
     </style>
 </head>
@@ -89,5 +109,9 @@
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae veniam illum eius distinctio ab quo, atque at porro explicabo unde quis maiores. Fugiat eligendi, dolores aut facere dolor quos quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorum aperiam perferendis tempore impedit? Laborum officia rerum a, doloribus asperiores obcaecati itaque veniam, eligendi aperiam ipsam vero inventore repellat vel! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quas officiis itaque! Odio fuga, quo omnis, suscipit dolorum adipisci, accusantium quia fugiat rerum tempora ea atque vero eum quisquam porro? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quis odit quae minima autem doloribus, reiciendis facere magnam eius ex asperiores sapiente numquam, labore exercitationem voluptas alias necessitatibus ratione quod?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel explicabo labore sed odio illum provident voluptatum minima dicta ab. Sint, laborum. Alias corporis minus facere et soluta, odit harum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eos, odio illum officia quasi esse quia officiis minus neque quis voluptatem ipsum. Placeat quis dolor sint neque debitis corrupti quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sunt quia minus molestias atque ut numquam ab quidem sit recusandae odit tempore assumenda, similique alias ea cumque minima dolor modi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit doloremque quas debitis ut corporis modi fugiat voluptates voluptate blanditiis voluptas sapiente deserunt repudiandae, quaerat incidunt unde quam similique error est! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis quae suscipit dolor odio, impedit provident, sunt sequi et exercitationem repellendus minus? Harum, facere ex. Placeat veniam ducimus laudantium asperiores iste? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel placeat expedita explicabo pariatur laboriosam quisquam, consectetur dolor aut hic quidem nam modi eum maxime id dolores nihil ad assumenda! Deleniti? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque quia vel architecto! Quos temporibus aperiam voluptate. Quisquam, sunt. Quibusdam, pariatur architecto minus et repellendus modi labore deserunt libero! Quis, autem!
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum veniam dolore quo? Fuga, qui amet sapiente officia exercitationem porro architecto est facilis dolorem deleniti deserunt suscipit, laudantium enim totam? Iste. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora nostrum praesentium, delectus consequatur iste blanditiis laudantium assumenda a veritatis tenetur ipsum cum deserunt at doloremque quia itaque dolores sunt rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ea eos quibusdam voluptas, quidem non pariatur vero id temporibus recusandae magnam debitis hic quod magni culpa odit velit consequuntur. Voluptates.</p>
 </body>
 </html>
