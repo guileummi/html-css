@@ -22,10 +22,14 @@
             border: 1px solid black;
             padding: 10px;
         }
+        #conteiner{ /* propriedade para deixar a tabela responsiva */
+            overflow-x: auto;
+        }
     </style>
 </head>
 <body>
-    <table>
+    <div id="conteiner">
+        <table>
         <caption>Filmes Favoritos</caption>
         <thead>
             <tr>
@@ -75,5 +79,7 @@
             </tr>
         </tbody>
     </table>
+    </div>
+    
 </body>
 </html>
