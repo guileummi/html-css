@@ -19,7 +19,7 @@ header > h1 {
     text-align: center;
 }
 
-i#burque {
+span#burque {
     background-color: rgb(68, 68, 68);
     color: white;
     display: block;
@@ -28,7 +28,7 @@ i#burque {
     cursor: pointer;
 }
 
-i#burque:hover {
+span#burque:hover {
     background-color: white;
     color: black;
 }
