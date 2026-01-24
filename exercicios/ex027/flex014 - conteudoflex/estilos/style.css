@@ -26,3 +26,7 @@ header, section.flex-content {
     padding: 20px;
     background-color: rgb(99, 109, 109);
 }
+
+section.normal {
+    background-color: rgb(105, 146, 126);
+}
