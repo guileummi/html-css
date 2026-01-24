@@ -27,14 +27,15 @@ header {
 }
 
 header > h1 {
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 200px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.349);
 }
 
 header > nav {
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
 
     display: flex;
     flex-direction: row;
