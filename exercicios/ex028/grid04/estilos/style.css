@@ -1,0 +1,45 @@
+@charset 'UTF-8';
+
+
+/*
+    grid template = grid-template-rows + grid-template-columns
+    place items =  align-items + justify-items
+    place content = align-content + justify-content
+    align = vertical
+    justife = horizontal
+
+    Shorthands para itens:
+    grid-row: grid-row-start / grid-column-end
+    grid-column: grid-column-start / grid-column-end
+*/
+div.container {
+    border: 3px solid blue;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+div.caixa1 {
+    background-color: red;
+    border: 3px solid rgb(255, 136, 0);
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+div.caixa2 {
+    background-color: blue;
+    border: 3px solid rgb(0, 153, 255);
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+div.caixa3 {
+    background-color: yellow;
+    border: 3px solid green;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
